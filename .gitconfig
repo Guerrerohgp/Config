@@ -1,0 +1,17 @@
+
+[alias]
+	s = status
+	aa = add --all
+	cm = commit -m
+	alias = config --get-regexp ^alias\\.
+	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+	co = checkout
+	cob = checkout -b
+	l = log --pretty=format:\"%C(yellow)%h\\\\ %ad%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]\" --decorate --date=short
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	f = "!git ls-files | grep -i"
+[core]
+	autocrlf = false
+	eol = LF
+[diff]
+	renamelimit = 5000
